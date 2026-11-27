@@ -1,0 +1,3 @@
+**Error Handling:**
+
+I used try-catch-finally blocks to handle API errors and network failures. I check `response.ok` before parsing JSON responses. I also validate the city input to prevent empty or invalid searches. If a city is not found, a friendly error message is displayed. A loading message and disabled search button prevent repeated requests while fetching weather data.
