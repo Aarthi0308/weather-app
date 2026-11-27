@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 750px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    min-width: 0;
+}
+
+button {
+    padding: 13px 22px;
+    background: #4169e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #254bb5;
+    transform: scale(1.04);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#message {
+    margin: 15px 0;
+    color: #d93025;
+    font-weight: bold;
+}
+
+.current-weather {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    color: #222;
+}
+
+.current-weather h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.forecast-card {
+    background: #f1f5ff;
+    padding: 18px 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.forecast-card h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.forecast-card p {
+    margin: 8px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+}
