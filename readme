@@ -1,0 +1,74 @@
+# 🌤️ Weather Forecast App
+
+## 📌 Overview
+The Weather Forecast App is a web application that allows users to search for any city and view its current weather conditions along with a 5-day weather forecast.
+
+It fetches real-time weather information using the free Open-Meteo API.
+
+## 🚀 Features
+- Search weather by city name.
+- Display current temperature and weather conditions.
+- Show humidity, wind speed, and feels-like temperature.
+- Display a 5-day weather forecast.
+- Input validation and friendly error messages.
+- Loading state while fetching data.
+- Search using the Enter key.
+- Responsive design for mobile and desktop.
+
+## 🛠️ Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- Async/Await
+- Open-Meteo API
+
+## 📂 Project Structure
+```text
+Weather-Forecast-App/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## 🔗 APIs Used
+**1. Open-Meteo Geocoding API**
+- Finds the latitude and longitude of the searched city.
+
+**2. Open-Meteo Weather API**
+- Fetches current weather conditions and a 5-day forecast.
+
+API Website: https://open-meteo.com/
+
+No API key is required.
+
+## ⚙️ How to Run
+1. Clone this repository:
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_LINK
+   ```
+2. Open the project folder in VS Code.
+3. Open `index.html` using Live Server.
+4. Enter a city name in the search box.
+5. Click Search to view the weather details.
+
+## ⚠️ Error Handling
+- Validates empty and invalid city names.
+- Checks API response status before parsing JSON.
+- Displays friendly messages when a city is not found.
+- Handles network and API errors using try-catch.
+- Displays a loading message while fetching weather data.
+- Disables the search button during API requests.
+
+## 🎯 Learning Outcomes
+- Understanding asynchronous JavaScript.
+- Working with Fetch API and JSON.
+- Using async/await and try-catch.
+- Dynamic DOM manipulation.
+- Input validation and error handling.
+- Working with free third-party APIs.
+
+## 👩‍💻 Author
+Developed as part of an internship project to practice API integration and JavaScript fundamentals.
